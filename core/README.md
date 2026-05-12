@@ -1,5 +1,12 @@
 # suffixsort
 
+> **DEPRECATED.** This crate has been renamed to
+> [**`invlex`**](https://crates.io/crates/invlex). No further releases will
+> be made under the `suffixsort` name. To migrate, replace
+> `suffixsort = "0.3"` with `invlex = "0.3"` in your `Cargo.toml` and
+> `use suffixsort::*` with `use invlex::*` in your code — the API is
+> otherwise identical. Source: <https://gitlab.com/invlex/invlex-rs>.
+
 A high-performance Rust library for inverse lexicographic (suffix) sorting, providing both high-level processing utilities and low-level comparison functions.
 
 ## Features

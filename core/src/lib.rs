@@ -1,7 +1,31 @@
+//! # Deprecated
+//!
+//! This crate has been renamed to [`invlex`]. No further releases will be
+//! made under the `suffixsort` name. Please migrate:
+//!
+//! ```toml
+//! # before
+//! suffixsort = "0.3"
+//! # after
+//! invlex = "0.3"
+//! ```
+//!
+//! The API is otherwise identical (`use suffixsort::*` → `use invlex::*`).
+//!
+//! [`invlex`]: https://crates.io/crates/invlex
+
+// Silence deprecation warnings for in-crate uses of our own deprecated types.
+// External users still see the warning when they `use suffixsort::*`.
+#![allow(deprecated)]
+
 use rayon::prelude::*;
 use std::cmp::Ordering;
 use unicode_normalization::UnicodeNormalization;
 
+#[deprecated(
+    since = "0.3.1",
+    note = "the `suffixsort` crate has been renamed to `invlex`; switch your dependency"
+)]
 #[derive(Clone, Debug)]
 pub struct SortConfig {
     pub ignore_case: bool,

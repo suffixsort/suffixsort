@@ -1,5 +1,14 @@
 # suffixsort - Inverse Lexicographic Sorter
 
+> **DEPRECATED.** This project has been renamed to **invlex**. No further
+> releases will be made under the `suffixsort` / `ssort` names. Please migrate:
+>
+> - library: `suffixsort` → [`invlex`](https://crates.io/crates/invlex)
+> - CLI crate: `ssort` → [`invlex-cli`](https://crates.io/crates/invlex-cli) (binary is `invlex`)
+>
+> The API is otherwise identical; replace `use suffixsort::*` with `use invlex::*`.
+> Source: <https://gitlab.com/invlex/invlex-rs>.
+
 A high-performance Rust workspace containing both a command-line tool and library for inverse lexicographic (suffix) sorting.
 
 ## Workspace Structure

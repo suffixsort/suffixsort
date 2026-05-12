@@ -1,6 +1,16 @@
 ssort - Suffix-sorting CLI tool
 ===============================
 
+> **DEPRECATED.** This crate has been renamed to
+> [**`invlex-cli`**](https://crates.io/crates/invlex-cli) and the binary
+> is now `invlex` (not `ssort`). No further releases will be made under
+> the `ssort` name. To migrate:
+>
+>     cargo uninstall ssort
+>     cargo install invlex-cli
+>
+> Flags and behavior are unchanged. Source: <https://gitlab.com/invlex/invlex-rs>.
+
 `ssort` is a CLI sort utility for inverse lexicographic (suffix) sorting.
 
 An inverse/suffix sort order looks at the last character first, and

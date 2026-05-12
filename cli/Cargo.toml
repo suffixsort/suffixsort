@@ -1,7 +1,7 @@
 [package]
 name = "ssort"
-description = "CLI tool for suffix (inverse lexicographic) sorting"
-version = "0.3.0"
+description = "[DEPRECATED — renamed to `invlex-cli`, binary `invlex`] CLI tool for inverse lexicographic sorting"
+version = "0.3.1"
 edition = "2024"
 license = "MIT OR Apache-2.0"
 authors = ["x48 <x48@x48.org>"]
@@ -23,8 +23,7 @@ categories = [
 [dependencies]
 clap = { version = "4.5.45", features = ["derive"] }
 rayon = "1.11.0"
-suffixsort = "0.3.0"
-# suffixsort = { path = "../core" }
+suffixsort = { path = "../core", version = "0.3.1" }
 
 [[bin]]
 name = "ssort"
